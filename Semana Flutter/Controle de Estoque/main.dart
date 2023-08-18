@@ -17,10 +17,15 @@ class _MainAppState extends State<MainApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-         appBar: AppBar(
+        appBar: AppBar(
           title: const Text("Meus Produtos", style: TextStyle(color: Colors.white, fontSize: 20,)),
-          backgroundColor: Colors.black,),
-          
+          backgroundColor: Colors.black,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.equalizer),
+              onPressed: () {},
+            )]
+        ),
         body: const Center(
           child: Text(''),
         ),
