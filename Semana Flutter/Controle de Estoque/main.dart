@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'cadastro.dart';
 
 void main() {
-  runApp( MainApp());
+  runApp( MaterialApp( home: MainApp()),);
 }
 
 class MainApp extends StatefulWidget {
@@ -15,8 +15,7 @@ class MainApp extends StatefulWidget {
 class _MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: const Text("Meus Produtos", style: TextStyle(color: Colors.white, fontSize: 20,)),
           backgroundColor: Colors.black,
@@ -37,7 +36,7 @@ class _MainAppState extends State<MainApp> {
           );
          },
         child: const Icon(Icons.add), backgroundColor: Colors.black,),
-      ),
-    );
+      );
   }
 }
+
